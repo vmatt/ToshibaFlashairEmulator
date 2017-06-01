@@ -28,7 +28,7 @@ app.get('/thumbnail.cgi', function (req, res) {
 	res.redirect('./thumbnails'+req._parsedOriginalUrl.query);
 });
 
-var server = app.listen(80, function () {
+var server = app.listen(8080, function () {
   var port = server.address().port
 	console.log("Az SD emulátor elérhető a %s-es porton", port);
   })
